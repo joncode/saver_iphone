@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface GoalsViewController : UIViewController <UITableViewDataSource> 
+{
+    NSMutableArray *goals;
+}
+
+@property (nonatomic, retain) NSMutableArray *goals;
 
 @end

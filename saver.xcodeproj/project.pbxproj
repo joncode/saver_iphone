@@ -15,7 +15,7 @@
 		14A1516115C760F000FF2C1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A1516015C760F000FF2C1D /* AppDelegate.m */; };
 		14A1516415C760F100FF2C1D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A1516215C760F000FF2C1D /* MainStoryboard_iPhone.storyboard */; };
 		14A1516715C760F100FF2C1D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A1516515C760F100FF2C1D /* MainStoryboard_iPad.storyboard */; };
-		14A1516A15C760F100FF2C1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A1516915C760F100FF2C1D /* ViewController.m */; };
+		14A1516A15C760F100FF2C1D /* GoalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A1516915C760F100FF2C1D /* GoalsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +23,16 @@
 		14A1515015C760F000FF2C1D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		14A1515215C760F000FF2C1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		14A1515415C760F000FF2C1D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		14A1515815C760F000FF2C1D /* saver-Info.plist */ = {isa = PBXFileReference; path = "saver-Info.plist"; sourceTree = "<group>"; };
+		14A1515815C760F000FF2C1D /* saver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "saver-Info.plist"; sourceTree = "<group>"; };
 		14A1515A15C760F000FF2C1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14A1515C15C760F000FF2C1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		14A1515E15C760F000FF2C1D /* saver-Prefix.pch */ = {isa = PBXFileReference; path = "saver-Prefix.pch"; sourceTree = "<group>"; };
-		14A1515F15C760F000FF2C1D /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		14A1515E15C760F000FF2C1D /* saver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "saver-Prefix.pch"; sourceTree = "<group>"; };
+		14A1515F15C760F000FF2C1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14A1516015C760F000FF2C1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		14A1516315C760F100FF2C1D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		14A1516615C760F100FF2C1D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		14A1516815C760F100FF2C1D /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		14A1516915C760F100FF2C1D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14A1516815C760F100FF2C1D /* GoalsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoalsViewController.h; sourceTree = "<group>"; };
+		14A1516915C760F100FF2C1D /* GoalsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoalsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,9 @@
 				14A1516015C760F000FF2C1D /* AppDelegate.m */,
 				14A1516215C760F000FF2C1D /* MainStoryboard_iPhone.storyboard */,
 				14A1516515C760F100FF2C1D /* MainStoryboard_iPad.storyboard */,
-				14A1516815C760F100FF2C1D /* ViewController.h */,
-				14A1516915C760F100FF2C1D /* ViewController.m */,
+				14A1516815C760F100FF2C1D /* GoalsViewController.h */,
+				14A1515C15C760F000FF2C1D /* main.m */,
+				14A1516915C760F100FF2C1D /* GoalsViewController.m */,
 				14A1515715C760F000FF2C1D /* Supporting Files */,
 			);
 			path = saver;
@@ -95,7 +96,6 @@
 			children = (
 				14A1515815C760F000FF2C1D /* saver-Info.plist */,
 				14A1515915C760F000FF2C1D /* InfoPlist.strings */,
-				14A1515C15C760F000FF2C1D /* main.m */,
 				14A1515E15C760F000FF2C1D /* saver-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -166,7 +166,7 @@
 			files = (
 				14A1515D15C760F000FF2C1D /* main.m in Sources */,
 				14A1516115C760F000FF2C1D /* AppDelegate.m in Sources */,
-				14A1516A15C760F100FF2C1D /* ViewController.m in Sources */,
+				14A1516A15C760F100FF2C1D /* GoalsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
