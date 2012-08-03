@@ -17,6 +17,14 @@
 @synthesize  createdAt;
 @synthesize  updatedAt;
 
+-(void) dealloc {
+    [name release];
+    [amount release];
+    [goalId release];
+    [createdAt release];
+    [updatedAt release];
+    [super dealloc];
+}
 
 -(id)initWithDictionary:(NSDictionary *)dictionary {
     if (self = [super init]) {
@@ -28,6 +36,27 @@
         self.updatedAt = [dictionary valueForKey:@"updated_at"]; 
     }
     return self;
+}
+
++ (NSArray *)findAllRemote {
+    NSURL *url = [NSURL URLWithString:@"http://localhost:3000/goals.json"];
+    
+    NSError *error = nil;
+    
+    NSString *jsonString = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:&error];
+    NSMutableArray *goals = [NSMutableArray array];
+    if (jsonString) {
+        SBJSON *json = [[SBJSON alloc] init];
+        NSArray *results = [json objectWithString:jsonString error:&error];
+        [json release];
+        for (NSDictionary *dictionary in results) {
+            Goal *goal = [[Goal alloc] initWithDictionary:dictionary];
+            [goals addObject:goal];
+            [goal release];
+        }
+    }
+    return goals;
+    
 }
 
 @end

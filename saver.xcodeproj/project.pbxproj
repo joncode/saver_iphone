@@ -23,6 +23,8 @@
 		14A1518215C7B24B00FF2C1D /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A1517B15C7B24B00FF2C1D /* SBJsonParser.m */; };
 		14A1518315C7B24B00FF2C1D /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A1517D15C7B24B00FF2C1D /* SBJsonWriter.m */; };
 		14A1518615C7B2CB00FF2C1D /* Goal.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A1518515C7B2CB00FF2C1D /* Goal.m */; };
+		14A1518D15CB35E100FF2C1D /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A1518C15CB35E100FF2C1D /* Resource.m */; };
+		14A1519015CB522200FF2C1D /* TableViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A1518F15CB522200FF2C1D /* TableViewTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +40,7 @@
 		14A1516015C760F000FF2C1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		14A1516315C760F100FF2C1D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		14A1516615C760F100FF2C1D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		14A1516815C760F100FF2C1D /* GoalsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoalsViewController.h; sourceTree = "<group>"; };
+		14A1516815C760F100FF2C1D /* GoalsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GoalsViewController.h; path = Classes/GoalsViewController.h; sourceTree = "<group>"; };
 		14A1516915C760F100FF2C1D /* GoalsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoalsViewController.m; sourceTree = "<group>"; };
 		14A1517115C7B24B00FF2C1D /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		14A1517215C7B24B00FF2C1D /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
@@ -55,6 +57,10 @@
 		14A1517D15C7B24B00FF2C1D /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		14A1518415C7B2CB00FF2C1D /* Goal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goal.h; sourceTree = "<group>"; };
 		14A1518515C7B2CB00FF2C1D /* Goal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goal.m; sourceTree = "<group>"; };
+		14A1518B15CB35E100FF2C1D /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Resource.h; path = Classes/Resource.h; sourceTree = "<group>"; };
+		14A1518C15CB35E100FF2C1D /* Resource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Resource.m; path = Classes/Resource.m; sourceTree = "<group>"; };
+		14A1518E15CB522200FF2C1D /* TableViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewTest.h; sourceTree = "<group>"; };
+		14A1518F15CB522200FF2C1D /* TableViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 		14A1514F15C760F000FF2C1D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14A1517015C7B24B00FF2C1D /* json-framework */,
 				14A1515015C760F000FF2C1D /* UIKit.framework */,
 				14A1515215C760F000FF2C1D /* Foundation.framework */,
 				14A1515415C760F000FF2C1D /* CoreGraphics.framework */,
@@ -102,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				14A1515F15C760F000FF2C1D /* AppDelegate.h */,
-				14A1517015C7B24B00FF2C1D /* json-framework */,
 				14A1516015C760F000FF2C1D /* AppDelegate.m */,
 				14A1516215C760F000FF2C1D /* MainStoryboard_iPhone.storyboard */,
 				14A1516515C760F100FF2C1D /* MainStoryboard_iPad.storyboard */,
@@ -112,6 +118,10 @@
 				14A1515715C760F000FF2C1D /* Supporting Files */,
 				14A1518415C7B2CB00FF2C1D /* Goal.h */,
 				14A1518515C7B2CB00FF2C1D /* Goal.m */,
+				14A1518B15CB35E100FF2C1D /* Resource.h */,
+				14A1518C15CB35E100FF2C1D /* Resource.m */,
+				14A1518E15CB522200FF2C1D /* TableViewTest.h */,
+				14A1518F15CB522200FF2C1D /* TableViewTest.m */,
 			);
 			path = saver;
 			sourceTree = "<group>";
@@ -143,7 +153,8 @@
 				14A1517C15C7B24B00FF2C1D /* SBJsonWriter.h */,
 				14A1517D15C7B24B00FF2C1D /* SBJsonWriter.m */,
 			);
-			path = "json-framework";
+			name = "json-framework";
+			path = "saver/json-framework";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +230,8 @@
 				14A1518215C7B24B00FF2C1D /* SBJsonParser.m in Sources */,
 				14A1518315C7B24B00FF2C1D /* SBJsonWriter.m in Sources */,
 				14A1518615C7B2CB00FF2C1D /* Goal.m in Sources */,
+				14A1518D15CB35E100FF2C1D /* Resource.m in Sources */,
+				14A1519015CB522200FF2C1D /* TableViewTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +315,7 @@
 		14A1516E15C760F100FF2C1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "saver/saver-Prefix.pch";
 				INFOPLIST_FILE = "saver/saver-Info.plist";
@@ -313,6 +327,7 @@
 		14A1516F15C760F100FF2C1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "saver/saver-Prefix.pch";
 				INFOPLIST_FILE = "saver/saver-Info.plist";

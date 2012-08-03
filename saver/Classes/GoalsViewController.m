@@ -8,7 +8,6 @@
 
 #import "GoalsViewController.h"
 #import "Goal.h"
-#import "TableViewTest.h"
 
 @implementation GoalsViewController 
 
@@ -34,7 +33,7 @@
 - (IBAction)refresh {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     self.goals = [Goal findAllRemote];
-    [self.tableView reloadData];
+    //[self.tableView reloadData];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
